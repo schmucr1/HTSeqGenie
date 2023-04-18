@@ -11,7 +11,9 @@ on:
       - "README.md"
 
 jobs:
+
   build:
+
     runs-on: ubuntu-latest
 
     steps:
@@ -27,5 +29,5 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
         
-   - name: Publish to Github Container registry
-       run: docker push ghcr.io/schmucr1/htseqgenie:1.0.0
+#   - name: Publish to Github Container registry
+#       run: docker push ghcr.io/<git repo username>/<container name>:1.0.0
