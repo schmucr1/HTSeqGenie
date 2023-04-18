@@ -29,5 +29,6 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
         
-#   - name: Publish to Github Container registry
-#       run: docker push ghcr.io/${{ GITHUB_REPOSITORY }}:1.0.0
+    - name: Publish to Github Container registry
+      run: docker push ghcr.io/${{ GITHUB_REPOSITORY }}:1.0.0
+      
